@@ -14,10 +14,10 @@ body {
 }
 
 .game-area {
-    background: #fff;
+    background: url(/assets/images/quiz-background.jpg) no-repeat center center fixed;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 100px auto 0; 
     border-radius: 5px;
     padding: 30px; 
 }
@@ -25,7 +25,7 @@ body {
 .game-area h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
-    color: #036ffc;
+    color: #ffffff;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 15px;
@@ -38,16 +38,16 @@ body {
 .question-area h2 {
     font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #036ffc;
+    color: #000000;
     font-weight: 600;
 }
 
 .btn {
-    background: #fff;
-    color: #036ffc;
+    background: #796f6a;
+    color: #000000;
     font-weight: 500;
     width: 100%;
-    border: 2px solid #d4c74f;
+    border: 2px solid #f1a61b;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
