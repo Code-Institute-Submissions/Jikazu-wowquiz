@@ -8,18 +8,18 @@ const quizQuestions = [
             choice4:"Darnassus"}
         
        , correctAnswer: 1
-     } /* ,
+     }  ,
 
     {
         question: "Who is the leader of the horde?",
-        answers: [
-            { choice1: "Sylvanas Windrunner"},
-            { choice2: "Your mom"},
-            { text: "Your dad"},
-            { text: "Thrall"},
-        ]
+        answers: 
+            { choice1: "Sylvanas Windrunner",
+            choice2: "Your mom",
+            choice3: "Your dad",
+            choice4: "Thrall"}
+        
         , correctAnswer: 3
-    },
+    }/*,
 
     {
         question: "How many bosses does Deadmines have?",
@@ -118,24 +118,33 @@ let score = 0;
 
 /* when starting quiz this function sets everything to 0 */
 function startQuiz(){
-    currentQuestionIndex = 0;
+    
     score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion(quizQuestions);
+    /*nextButton.innerHTML = "Next"; */
+        showQuestion(quizQuestions);
+        choice1Element.addEventListener('click', function() {
+            console.log('Clicked!');
+            currentQuestionIndex = currentQuestionIndex + 1;
+            console.log(currentQuestionIndex);
+            choice1Element.textContent = q[currentQuestionIndex].answers.choice1;
+        })
 }
 
 function showQuestion(q) {
     let questionElement = document.getElementById("question");
-    questionElement.textContent = q[0].question;
+    questionElement.textContent = q[currentQuestionIndex].question;
     
     let choice1Element = document.getElementById("btn1");
     let choice2Element = document.getElementById("btn2"); 
     let choice3Element = document.getElementById("btn3"); 
     let choice4Element = document.getElementById("btn4");  
-    choice1Element.textContent = q[0].answers.choice1;
-    choice2Element.textContent = q[0].answers.choice2;
-    choice3Element.textContent = q[0].answers.choice3;
-    choice4Element.textContent = q[0].answers.choice4;
+    choice1Element.textContent = q[currentQuestionIndex].answers.choice1;
+    choice2Element.textContent = q[currentQuestionIndex].answers.choice2;
+    choice3Element.textContent = q[currentQuestionIndex].answers.choice3;
+    choice4Element.textContent = q[currentQuestionIndex].answers.choice4;
+
+    ;
+    
 }
 
 /* function showQuestion(){
