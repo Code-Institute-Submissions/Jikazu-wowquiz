@@ -28,13 +28,11 @@ body {
     color: #ffffff;
     font-weight: 600;
     border-bottom: 1px solid #333;
-    padding-bottom: 15px;
-}
-
-.question-area {
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+
 
 .question-area h2 {
     font-size: 18px;
@@ -74,6 +72,8 @@ body {
     cursor: pointer;
     display: block;
 } 
+
+/* footer */
 
 footer {
     height: 150px;

@@ -39,13 +39,13 @@ A live version of the project can be found here -
 # UX
 
 ### Site Purpose:
-*
+* This site is meant for anyone that would like to try their game knowledge of World of Warcraft classic.
  
 ### Site Goal:
-* 
+* It's here to give entertainment for anyone looking to do a quiz about World of Warcraft classic. 
 
 ### Audience:
-* 
+* Anyone who is a fan of the World of Warcraft franchise. 
 
 ### User goals:
 * 
