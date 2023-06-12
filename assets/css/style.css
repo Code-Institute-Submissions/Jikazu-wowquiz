@@ -74,3 +74,23 @@ body {
     cursor: pointer;
     display: block;
 } 
+
+footer {
+    height: 150px;
+    position: sticky;
+}
+
+.socialmedia{
+    text-align: center;
+}
+
+.socialmedia > li {
+    display: inline;
+}
+
+.socialmedia i {
+    font-size: 120%;
+    margin: 1%;
+    padding: 5%;
+    color: #0a051d;
+}
