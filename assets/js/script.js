@@ -1,7 +1,7 @@
 // First we set a total of ten questions
 const quizQuestions = [
     {
-        question: "Q1 of 10: What is the capital of the alliance?",
+        question: "What is the capital of the alliance?",
         answers: {
             choice1:"Ironforge",
             choice2:"Stormwind",
@@ -12,7 +12,7 @@ const quizQuestions = [
      },
 
     {
-        question: "Q2 of 10: Who is the leader of the horde?",
+        question: "Who is the leader of the horde?",
         answers: {
             choice1: "Sylvanas Windrunner",
             choice2: "Your mom",
@@ -23,7 +23,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q3 of 10: How many bosses does Deadmines have?",
+        question: "How many bosses does Deadmines have?",
         answers: {
             choice1: "7",
             choice2: "6",
@@ -34,7 +34,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q4 of 10: Which bosses drops the bindings for Thunderfury?",
+        question: "Which bosses drops the bindings for Thunderfury?",
         answers: {
             choice1: "Lucifron and Shazzrah",
             choice2: "Baron Geddon and Ragnaros",
@@ -45,7 +45,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q5 of 10: What level does druids get their bearform at?",
+        question: "What level does druids get their bearform at?",
         answers: {
             choice1: "12",
             choice2: "11",
@@ -56,7 +56,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q6 of 10: What is the racial mount for trolls?",
+        question: "What is the racial mount for trolls?",
         answers: {
             choice1: "Raptor",
             choice2: "Kodo",
@@ -67,7 +67,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q7 of 10: Who is the last boss of AQ20?",
+        question: "Who is the last boss of AQ20?",
         answers: {
             choice1: "C'thun",
             choice2: "Ossirian the Unscarred",
@@ -78,7 +78,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q8 of 10: How much gold does paladins have to pay at the start of their epic mount quest?",
+        question: "How much gold does paladins have to pay at the start of their epic mount quest?",
         answers:{ 
             choice1: "300",
             choice2: "150",
@@ -89,7 +89,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q9 of 10: Which class can't gnomes play as?",
+        question: "Which class can't gnomes play as?",
         answers:{
             choice1: "Rogue",
             choice2: "Warrior",
@@ -100,7 +100,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Q10 of 10: Which horde race can be a druid?",
+        question: "Which horde race can be a druid?",
         answers: {
             choice1: "Troll",
             choice2: "Orc",
@@ -125,9 +125,9 @@ function startQuiz(){
         console.log("your answer was ", userAns);                                               // Console log the user answer for the preceding question
         console.log("correct answer was ", quizQuestions[currentQuestionIndex].correctAnswer);  // Console log the correct answer for the preceding question
         if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
-            score = score + 10;
+            score = score + 1;
         }
-        console.log("so far you have scored ", score, "/", 10*(currentQuestionIndex + 1));
+        console.log("so far you have scored ", score, "/", currentQuestionIndex + 1);
         console.log("current index", currentQuestionIndex);
         userAns = 0;                                                                            // Reset the userAns for the new question
         if (currentQuestionIndex < quizQuestions.length - 1) {
@@ -146,7 +146,7 @@ function showQuestion(q, i) {
     let choice3Element = document.getElementById("btn3"); 
     let choice4Element = document.getElementById("btn4");  
 
-    questionElement.textContent = q[i].question;
+    questionElement.textContent = "Q" + (i + 1) + " of " + quizQuestions.length + ": " + q[i].question;
     choice1Element.textContent = q[i].answers.choice1;
     choice2Element.textContent = q[i].answers.choice2;
     choice3Element.textContent = q[i].answers.choice3;
@@ -175,9 +175,8 @@ function showQuestion(q, i) {
 }
 
 function showFinalScore() {
-    console.log("show final score");
     let questionElement = document.getElementById("question");                                  // This is a quick way to display final score... need to remove all the buttons
-    questionElement.textContent = "Your final score is " + score + "/" + 10*quizQuestions.length;
+    questionElement.textContent = "Your final score is " + score + "/" + quizQuestions.length;
 }
 
 startQuiz();
