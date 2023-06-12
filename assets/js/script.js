@@ -126,7 +126,7 @@ function startQuiz(){
         if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
             score = score + 1;
         }
-        console.log("so far you have scored ", score, "/", currentQuestionIndex + 1);
+        document.getElementById("score-box").textContent = "Score: " + score + "/" + (currentQuestionIndex + 1);
         console.log("current index", currentQuestionIndex);
         userAns = 0;                                                                            // Reset the userAns for the new question
         if (currentQuestionIndex < quizQuestions.length - 1) {
