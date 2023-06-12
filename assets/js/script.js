@@ -181,12 +181,12 @@ let arr = ["btn1", "btn2", "btn3", "btn4"];
 checkAnswer.addEventListener('click', function() {                                       // Anytime they click on the check answer button it displays if they got the question right
     if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
         checkAnswer.innerHTML = "Correct!";
-        document.getElementById("btn2").style.background="green";
+        document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer -1]).style.background="green";
     } else {
         checkAnswer.innerHTML = "Incorrect!";
 
         document.getElementById(arr[userAns-1]).style.background="red";
-        document.getElementById("btn2").style.background="green";
+        document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer - 1]).style.background="green";
     }
   });    
 
