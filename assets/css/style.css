@@ -33,6 +33,7 @@ body {
 
 .question-area {
     display: flex;
+    justify-content: center;
 }
 
 .question-area h2 {
