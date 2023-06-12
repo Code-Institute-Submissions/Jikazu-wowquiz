@@ -134,7 +134,7 @@ function startQuiz(){
             currentQuestionIndex++;
         } else {
             showFinalScore();
-            // document.getElementsByClassName("btn").
+            document.getElementById("answer-button").style.display="none";
             
         }   
     };
