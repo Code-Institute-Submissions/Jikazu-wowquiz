@@ -20,7 +20,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "Your dad",
             choice4: "Thrall"
         },
-        correctAnswer: 3
+        correctAnswer: 4
     },
 
     {
@@ -31,7 +31,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "9",
             choice4: "8"
         },
-        correctAnswer: 3
+        correctAnswer: 4
     },
 
     {
@@ -42,7 +42,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "Garr and Baron Geddon",
             choice4: "Sulfuron and Garr"
         },
-        correctAnswer: 2
+        correctAnswer: 3
     },
 
     {
@@ -53,7 +53,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "14",
             choice4: "10"
         },
-        correctAnswer: 3
+        correctAnswer: 4
     },
 
     {
@@ -75,7 +75,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "Moam",
             choice4: "Ayamiss the Hunter"
         },
-        correctAnswer: 1
+        correctAnswer: 2
     },
 
     {
@@ -86,7 +86,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "100",
             choice4: "500"
         },
-        correctAnswer: 1
+        correctAnswer: 2
     },
 
     {
@@ -97,7 +97,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "Hunter",
             choice4: "Mage"
         },
-        correctAnswer: 2
+        correctAnswer: 3
     },
 
     {
@@ -108,7 +108,7 @@ const quizQuestions = [                                         // Set up my arr
             choice3: "Undead",
             choice4: "Tauren"
         },
-        correctAnswer: 3
+        correctAnswer: 4
     }
 
 ];
