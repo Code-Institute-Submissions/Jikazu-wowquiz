@@ -120,6 +120,7 @@ function startQuiz(){
     nextButton.onclick = function() {
         console.log("your answer was ", userAns);                                               // Console log the user answer for the preceding question
         console.log("correct answer was ", quizQuestions[currentQuestionIndex].correctAnswer);  // Console log the correct answer for the preceding question
+        document.getElementById("check-answer").innerHTML = "Check Answer";
         if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
             score = score + 1;
         }
