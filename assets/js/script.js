@@ -121,6 +121,8 @@ function startQuiz(){
         console.log("your answer was ", userAns);                                               // Console log the user answer for the preceding question
         console.log("correct answer was ", quizQuestions[currentQuestionIndex].correctAnswer);  // Console log the correct answer for the preceding question
         document.getElementById("check-answer").innerHTML = "Check Answer";
+        document.getElementById(arr[userAns-1]).style.background="#796f6a";
+        document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer - 1]).style.background="#796f6a";
         if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
             score = score + 1;
         }
