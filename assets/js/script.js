@@ -175,6 +175,18 @@ function showFinalScore() {
     questionElement.textContent = "Your final score is " + score + "/" + quizQuestions.length;
 }
 
+let checkAnswer = document.getElementById("check-answer");
+
+checkAnswer.addEventListener('click', function() {                                       // Anytime they click on the check answer button it displays if they got the question right
+    if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
+        checkAnswer.innerHTML = "Correct answer!";
+    } else {
+        checkAnswer.innerHTML = "Incorrect answer!";
+    }
+  });    
+
+
+
 
 // ------------------------ Main body of my code ------------------------------------------------------------------------------------
 let currentQuestionIndex = 0;                                                                   // Starting parameter
