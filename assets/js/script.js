@@ -134,7 +134,8 @@ function startQuiz(){
             currentQuestionIndex++;
         } else {
             showFinalScore();
-            document.getElementsById("btn1").style.visibility = "hidden";
+            // document.getElementsByClassName("btn").
+            
         }   
     };
 }
@@ -193,6 +194,12 @@ checkAnswer.addEventListener('click', function() {                              
     }
   });    
 
+document.getElementById('restart-quiz').addEventListener('click', function(){
+
+    location.reload();
+    return false;
+
+});
 
 
 
