@@ -60,6 +60,11 @@ body {
     color: #fff;
 }
 
+.btn:focus {
+    background-color: #222;
+    color: #fff;
+}
+
 #next-btn {
     background: #001;
     color: #fff;
