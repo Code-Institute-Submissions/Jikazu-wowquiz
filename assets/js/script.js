@@ -1,5 +1,6 @@
-// First we set a total of ten questions
-const quizQuestions = [
+// ------------------------ Define constants ------------------------------------------------------------------------------------
+const nextButton = document.getElementById("next-btn");         // Name the element with id 'next-btn', 'nextButton'
+const quizQuestions = [                                         // Set up my array of questions
     {
         question: "What is the capital of the alliance?",
         answers: {
@@ -8,7 +9,7 @@ const quizQuestions = [
             choice3:"Orgrimmar",
             choice4:"Darnassus"
         },
-        correctAnswer: 1
+        correctAnswer: 2
      },
 
     {
@@ -112,13 +113,8 @@ const quizQuestions = [
 
 ];
 
-const nextButton = document.getElementById("next-btn");
 
-// Set the starting parameters
-let currentQuestionIndex = 0;
-let userAns = 0;
-let score = 0;
-
+// ------------------------ Set up my functions ------------------------------------------------------------------------------------
 function startQuiz(){
     showQuestion(quizQuestions, currentQuestionIndex);
     nextButton.onclick = function() {
@@ -151,7 +147,7 @@ function showQuestion(q, i) {
     choice2Element.textContent = q[i].answers.choice2;
     choice3Element.textContent = q[i].answers.choice3;
     choice4Element.textContent = q[i].answers.choice4;
-   
+    
     choice1Element.addEventListener('click', function() {                                       // Anytime they click on the Choice 1 button, override the parameter 'userAns' as 1
         userAns = 1;
         console.log(userAns);
@@ -179,4 +175,9 @@ function showFinalScore() {
     questionElement.textContent = "Your final score is " + score + "/" + quizQuestions.length;
 }
 
-startQuiz();
+
+// ------------------------ Main body of my code ------------------------------------------------------------------------------------
+let currentQuestionIndex = 0;                                                                   // Starting parameter
+let userAns = 0;                                                                                // Starting parameter
+let score = 0;                                                                                  // Starting parameter
+startQuiz();                                                                                    // Run the function
