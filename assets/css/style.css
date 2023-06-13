@@ -9,12 +9,12 @@
 
 
 body {
-    background: url(/assets/images/backgroundpic.jpg) no-repeat center center fixed;
+    background: url(../images/backgroundpic.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 .game-area {
-    background: url(/assets/images/quiz-background.jpg) no-repeat center center fixed;
+    background: url(../images/quiz-background.jpg) no-repeat center center fixed;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0; 
