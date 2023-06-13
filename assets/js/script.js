@@ -121,8 +121,10 @@ function startQuiz(){
         console.log("your answer was ", userAns);                                               // Console log the user answer for the preceding question
         console.log("correct answer was ", quizQuestions[currentQuestionIndex].correctAnswer);  // Console log the correct answer for the preceding question
         document.getElementById("check-answer").innerHTML = "Check Answer";
-        document.getElementById(arr[userAns-1]).style.background=""; //.style.background="#796f6a";
-        document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer - 1]).style.background=""; //.style.background="#796f6a";
+        if (userAns > 0) {
+            document.getElementById(arr[userAns-1]).style.background=""; 
+        }
+        document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer - 1]).style.background=""; 
         if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
             score = score + 1;
         }
@@ -183,6 +185,7 @@ function showFinalScore() {
 
 let checkAnswer = document.getElementById("check-answer");
 let arr = ["btn1", "btn2", "btn3", "btn4"];
+
 checkAnswer.addEventListener('click', function() {                                       // Anytime they click on the check answer button it displays if they got the question right
     if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
         checkAnswer.innerHTML = "Correct!";
