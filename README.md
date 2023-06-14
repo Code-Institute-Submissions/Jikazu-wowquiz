@@ -91,6 +91,8 @@ The quiz has one area, which is the main area of the quiz where all the interact
    #### Footer Section
 
    - The footer contains my guilds social media links.
+   
+   ![footer](/assets/readmeImages/footer.png)
 
 
    ## Technologies used
