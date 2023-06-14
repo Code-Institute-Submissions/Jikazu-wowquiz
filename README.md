@@ -86,12 +86,22 @@ The quiz has one area, which is the main area of the quiz where all the interact
 
 #### Main quiz
 
-   - The main quiz area contains the title, where the questions are displayed, the multiple choices, along with the buttons to check your answer, go to the next question, and resetting the quiz. ![quizarea](/assets/readmeImages/quizarea.png)
+   - The main quiz area contains the title, where the questions are displayed, the multiple choices, along with the buttons to check your answer, go to the next question, and resetting the quiz. 
+   
+   ![quizarea](/assets/readmeImages/quizarea.png)
+
+   When you check your answer, it will light up in red if the answer you chose was incorrect and shows which one was the correct answer.
+
+   ![incorrect](/assets/readmeImages/incorrect.png)
+
+   At the end, it will show you your final score.
+
+   ![finalscore](/assets/readmeImages/finalscore.png)
 
    #### Footer Section
 
    - The footer contains my guilds social media links.
-   
+
    ![footer](/assets/readmeImages/footer.png)
 
 
@@ -130,22 +140,28 @@ The quiz has one area, which is the main area of the quiz where all the interact
 ### Validator Testing
 
 -HTML
+- No errors were returned when running it through the official. [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjikazu.github.io%2Fwowquiz%2F)
 
+![W3C HTML Validator](/assets/readmeImages/htmlvalidator.png)
 
-![W3C HTML Validator]
+- CSS
+- No errors were returned when running it through the official [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjikazu.github.io%2Fwowquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-
-
-![Jigsaw Validator]
+![Jigsaw Validator](/assets/readmeImages/cssvalidator.png)
 
 - Lighthouse testing
 
-![Lighthouse testing score]
+![Lighthouse testing score](/assets/readmeImages/lighthouse.png)
+
+- JS Hint testing
+- JSHint No errors where found by the official JSHint validator.
+
+![JSHint](/assets/readmeImages/jshint.png)
 
    
 ### Unfixed Bugs
 
-1. I've had reports from a beta tester with Safari on Mac that the choices did not change color as it should. I have not been able to replicate this by myself as I do not use Safari or a Mac.This seems to be working fine on an android phone, and on pc in Chrome, Firefox and Edge on different devices.
+1. I've had one report from a beta tester with Safari on Mac that the choices did not change color as it should. I have not been able to replicate this by myself as I do not use Safari or a Mac.This seems to be working fine on an android phone, and on pc in Chrome, Firefox and Edge on different devices.
 
 2. When selecting a choice that is incorrect, and then changing it to correct choice, and clicking the Next button does not reset the first button changed back to it's original color and stays red.
 
