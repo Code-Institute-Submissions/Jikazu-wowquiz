@@ -198,7 +198,7 @@ Many thanks to:
 Martina Terlevic
  - My mentor
 
- Ka Heng Ho 
+ Ken Ho 
  -  My boyfriend who was my rock when I struggled and calmed me down.
 
  Slack.
@@ -211,7 +211,7 @@ Martina Terlevic
  https://www.youtube.com
  https://flexboxfroggy.com/
 
- And all the previous lessons in HTML-Essentials, CSS-Essentials and the Walkthrough project ”Love Maths!”.
+ And all the previous lessons in HTML-Essentials, CSS-Essentials, Javascript-Essentials and the Walkthrough project ”Love Maths!”.
 
  Kind Regards,
 
