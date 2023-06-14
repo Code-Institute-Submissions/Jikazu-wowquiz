@@ -178,7 +178,7 @@ function showQuestion(q, i) {
 }
 
 function showFinalScore() {
-    let questionElement = document.getElementById("question");                                  // This is a quick way to display final score... need to remove all the buttons
+    let questionElement = document.getElementById("question");                                  // This is a quick way to display final score
     questionElement.textContent = "Your final score is " + score + "/" + quizQuestions.length; 
     document.getElementById("score-box").style.display="none";
 }

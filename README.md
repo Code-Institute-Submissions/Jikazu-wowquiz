@@ -2,15 +2,15 @@
 
 # The purpose with this project
 
-The purpose of my project is to test the knowledge of World of Warcraft players on how much they know about the game and the lore around it.
+The purpose of my project is to test the knowledge of World of Warcraft players on how much they know about the game.
 
-The target audience are World of Warcraft players wanting to test their lore/game knowledge.
+The target audience are World of Warcraft players wanting to test their game knowledge.
 
 This website is the second of five projects that needs to be completed in order to receive a diploma in Software Development from The Code Institute.
 
 Requirements for the project is that the website has to be static and responsive using HTML5, CSS3 and Javascript.
 
-A live version of the project can be found here - 
+A live version of the project can be found here - https://jikazu.github.io/wowquiz/
 
 # Index
 
@@ -48,7 +48,7 @@ A live version of the project can be found here -
 * Anyone who is a fan of the World of Warcraft franchise. 
 
 ### User goals:
-* 
+* To test their game knowledge about World of Warcraft Classic.
 
 ### Requirements
 A responsive website that incorporates the languages I have learned so far, with a development process that needs to be well documented through a version controls system such as GitHub.
@@ -57,42 +57,68 @@ Required technologies: HTML, CSS, Javascript
 
 
 ## Design
+This is my second project, and I've been inspired by other student's P2 quizes that I've seen on Slack, but doing it my own way. My footer has been taken from my previous P1 project. As for the background and colours I decided to go with the classic login screen when you log in to the game, as that is the first thing one used to see when logging in to the classic version of the game back in the day, and a quiz background with parchment background as that is similar to the questlog window in the game.
+
+![questlog](/assets/readmeImages/quizbackground.jpg)
 
 
 ### Colour
-The colour palette
+The colour palette is taken from the colours from the site's background. 
 
 ### Typography
 
-The google font [insert](insert) was used for this project with a fallback of Sans-Serif. I've used font weight 600.  
+The google fonts [Cabin](https://fonts.google.com/specimen/Barlow?query=barlow) and [Open Sans](https://fonts.google.com/specimen/Open+Sans) was used for this project with a fallback of Sans-Serif. 
 
 ### Images
+
+I've borrowed a screenshot of the login screen from [Spas Dimitrov at ArtStation](https://www.artstation.com/artwork/KrzPP9) and a parchment picture from [Wikipedia Commons](https://commons.wikimedia.org/wiki/File:Parchment.00.jpg)
 
 
 
 ## Features
 
-The dunka dungeons website has three areas. Home, Gallery and Apply.
+The quiz has one area, which is the main area of the quiz where all the interactions are. It also have a footer with links to my guild's discord and Warcraftlogs page.
 
 
 
 ### Existing features
 
-#### Header and Navigation Section
+#### Main quiz
 
-   - The Header consists of a text based 
+   - The main quiz area contains the title, where the questions are displayed, the multiple choices, along with the buttons to check your answer, go to the next question, and resetting the quiz. 
 
    #### Footer Section
 
-   - The footer contains our social media links
+   - The footer contains my guilds social media links.
 
 
    ## Technologies used
 
    - [HTML](https://en.wikipedia.org/wiki/HTML)
    - [CSS](https://en.wikipedia.org/wiki/CSS)
+   - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
    ## Testing
+   Test of functionality and appearance of the website has have been dealt with troughout the development process. 
+   Tests has been conducted with Google Chrome, Firefox, Edge and Safari and on different devices.
+
+   - Selecting an answer lights up the button to indicate what you've selected.
+   - Clicking on Check answer shows if you're correct or incorrect.
+   - Clicking on Next displays the next question along with the choices and resets the colours.
+   - Clicking on Reset refreshes the page.
+   - Getting to the end of the quiz hides all the buttons and shows you your final score.
+   - The footer links works and brings you to the links.
+
+   I've listed my main issues here - 
+
+   1. After clicking Check answer and clicking next button the colours wouldn't reset to the original colour.
+   - Solution: Added a section in the on click function for the next button to reset all buttons to it's original css.
+   2. Early on in deployment I had a section to display the score and where the question was at the end to show the final score, so you'd see your score twice.
+   - Solution: Added in the code to hide the scorebox h3 and change the text in the question area to what the final score is.
+   3. Showing only the choices and not the placeholder text as well in the choice buttons.
+   - Solution: Changed the way entirely I was displaying them to get the values from the array of questions. 
+
+   Other than the above, I had some general difficulties knowing where to begin, but after having talks with my mentor and peers I decided to completely revamp my code at one point. I also had some general spelling mistakes and open brackets that has been remedied. 
 
 
 

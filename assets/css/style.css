@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans&display=swap');
 
 * {
     margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 .game-area h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     color: #ffffff;
     font-weight: 600;
@@ -40,7 +40,7 @@ body {
 
 .question-area h2 {
     font-size: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-weight: 600;
 }
@@ -49,6 +49,7 @@ body {
     background: #796f6a;
     color: #000000;
     font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     border: 2px solid #f1a61b;
     padding: 10px;
