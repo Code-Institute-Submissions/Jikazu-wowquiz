@@ -60,11 +60,11 @@ This is my second project, and I've been inspired by other student's P2 quizes t
 
 As for the background and colours I decided to go with the classic login screen when you log in to the game, as that is the first thing one used to see when logging in to the classic version of the game back in the day, and a quiz background with parchment background as that is similar to the questlog window in the game.
 
-![questlog](/assets/readmeImages/quizbackground.jpg)
+![questlog](/assets/readme-images/quizbackground.jpg)
 
 
 ### Colour
-The colour palette is taken from the colours that complements the site's background. ![colourpallete](/assets/readmeImages/colours.png)
+The colour palette is taken from the colours that complements the site's background. ![colourpallete](/assets/readme-images/colours.png)
 
 ### Typography
 
@@ -88,21 +88,21 @@ The quiz has one area, which is the main area of the quiz where all the interact
 
    - The main quiz area contains the title, where the questions are displayed, the multiple choices, along with the buttons to check your answer, go to the next question, and resetting the quiz. 
    
-   ![quizarea](/assets/readmeImages/quizarea.png)
+   ![quizarea](/assets/readme-images/quizarea.png)
 
    When you check your answer, it will light up in red if the answer you chose was incorrect and shows which one was the correct answer.
 
-   ![incorrect](/assets/readmeImages/incorrect.png)
+   ![incorrect](/assets/readme-images/incorrect.png)
 
    At the end, it will show you your final score.
 
-   ![finalscore](/assets/readmeImages/finalscore.png)
+   ![finalscore](/assets/readme-images/finalscore.png)
 
    #### Footer Section
 
    - The footer contains my guilds social media links.
 
-   ![footer](/assets/readmeImages/footer.png)
+   ![footer](/assets/readme-images/footer.png)
 
 
    ## Technologies used
@@ -142,21 +142,21 @@ The quiz has one area, which is the main area of the quiz where all the interact
 -HTML
 - No errors were returned when running it through the official. [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjikazu.github.io%2Fwowquiz%2F)
 
-![W3C HTML Validator](/assets/readmeImages/htmlvalidator.png)
+![W3C HTML Validator](/assets/readme-images/htmlvalidator.png)
 
 - CSS
 - No errors were returned when running it through the official [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjikazu.github.io%2Fwowquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-![Jigsaw Validator](/assets/readmeImages/cssvalidator.png)
+![Jigsaw Validator](/assets/readme-images/cssvalidator.png)
 
 - Lighthouse testing
 
-![Lighthouse testing score](/assets/readmeImages/lighthouse.png)
+![Lighthouse testing score](/assets/readme-images/lighthouse.png)
 
 - JS Hint testing
 - JSHint No errors where found by the official JSHint validator.
 
-![JSHint](/assets/readmeImages/jshint.png)
+![JSHint](/assets/readme-images/jshint.png)
 
    
 ### Unfixed Bugs

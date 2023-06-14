@@ -118,8 +118,10 @@ const quizQuestions = [                                         // Set up my arr
 function startQuiz(){
     showQuestion(quizQuestions, currentQuestionIndex);
     nextButton.onclick = function() {
-        console.log("your answer was ", userAns);                                               // Console log the user answer for the preceding question
-        console.log("correct answer was ", quizQuestions[currentQuestionIndex].correctAnswer);  // Console log the correct answer for the preceding question
+        document.getElementById("btn1").disabled=false;
+        document.getElementById("btn2").disabled=false;
+        document.getElementById("btn3").disabled=false;
+        document.getElementById("btn4").disabled=false;
         document.getElementById("check-answer").innerHTML = "Check Answer";
         if (userAns > 0) {
             document.getElementById(arr[userAns-1]).style.background=""; 
@@ -129,7 +131,6 @@ function startQuiz(){
             score = score + 1;
         }
         document.getElementById("score-box").textContent = "Score: " + score + "/" + (currentQuestionIndex + 1);
-        console.log("current index", currentQuestionIndex);
         userAns = 0;                                                                            // Reset the userAns for the new question
         if (currentQuestionIndex < quizQuestions.length - 1) {
             showQuestion(quizQuestions, currentQuestionIndex + 1);
@@ -156,22 +157,18 @@ function showQuestion(q, i) {
     
     choice1Element.addEventListener('click', function() {                                       // Anytime they click on the Choice 1 button, override the parameter 'userAns' as 1
         userAns = 1;
-        console.log(userAns);
       });    
       
     choice2Element.addEventListener('click', function() {                                       // Anytime they click on the Choice 2 button, override the parameter 'userAns' as 2
         userAns = 2;
-        console.log(userAns);
       });
 
     choice3Element.addEventListener('click', function() {                                       // Anytime they click on the Choice 3 button, override the parameter 'userAns' as 3
         userAns = 3;
-        console.log(userAns);
       });
 
     choice4Element.addEventListener('click', function() {                                       // Anytime they click on the Choice 4 button, override the parameter 'userAns' as 4
         userAns = 4;
-        console.log(userAns);
       });
 }
 
@@ -188,10 +185,18 @@ checkAnswer.addEventListener('click', function() {                              
     if (userAns == quizQuestions[currentQuestionIndex].correctAnswer) {
         checkAnswer.innerHTML = "Correct!";
         document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer -1]).style.background="green";
+        document.getElementById("btn1").disabled=true;
+        document.getElementById("btn2").disabled=true;
+        document.getElementById("btn3").disabled=true;
+        document.getElementById("btn4").disabled=true;
     } else {
         checkAnswer.innerHTML = "Incorrect!";
         document.getElementById(arr[userAns-1]).style.background="red";
         document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer - 1]).style.background="green";
+        document.getElementById("btn1").disabled=true;
+        document.getElementById("btn2").disabled=true;
+        document.getElementById("btn3").disabled=true;
+        document.getElementById("btn4").disabled=true;
     }
   });    
 
