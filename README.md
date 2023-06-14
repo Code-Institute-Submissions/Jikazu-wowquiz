@@ -134,6 +134,8 @@ The quiz has one area, which is the main area of the quiz where all the interact
    - Solution: Changed the way entirely I was displaying them to get the values from the array of questions. 
    4. Clicking next button without having made a choice threw an error in the console.
    - Added in the code that if useranswer is above 1 rather than 0, then the buttons changes back to it's original colour.  
+   5. When selecting a choice that is incorrect, and then changing it to correct choice, and clicking the Next button does not reset the first button changed back to it's original color and stays red.
+   - Added a disable for each individual ID of each button when clicking the check answer button, and to enable it again when it's clicked. 
 
    Other than the above, I had some general difficulties knowing where to begin, but after having talks with my mentor and peers I decided to completely revamp my code at one point. I also had some general spelling mistakes and open brackets that has been remedied. 
 
@@ -165,9 +167,7 @@ The quiz has one area, which is the main area of the quiz where all the interact
 
 1. I've had one report from a beta tester with Safari on Mac that the choices did not change color as it should. I have not been able to replicate this by myself as I do not use Safari or a Mac.This seems to be working fine on an android phone, and on pc in Chrome, Firefox and Edge on different devices.
 
-2. When selecting a choice that is incorrect, and then changing it to correct choice, and clicking the Next button does not reset the first button changed back to it's original color and stays red.
-
-All known bugs are in the [Testing](#testing) section, with their solution. 
+All other known bugs are in the [Testing](#testing) section, with their solution. 
 
 ## Development and Deployment
 
