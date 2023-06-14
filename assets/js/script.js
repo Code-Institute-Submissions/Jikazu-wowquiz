@@ -113,8 +113,8 @@ const quizQuestions = [                                         // Set up my arr
 
 ];
 
-
 // ------------------------ Set up my functions ------------------------------------------------------------------------------------
+
 function startQuiz(){
     showQuestion(quizQuestions, currentQuestionIndex);
     nextButton.onclick = function() {
@@ -137,7 +137,6 @@ function startQuiz(){
         } else {
             showFinalScore();
             document.getElementById("answer-button").style.display="none";
-            
         }   
     };
 }
@@ -174,7 +173,6 @@ function showQuestion(q, i) {
         userAns = 4;
         console.log(userAns);
       });
-
 }
 
 function showFinalScore() {
@@ -192,22 +190,18 @@ checkAnswer.addEventListener('click', function() {                              
         document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer -1]).style.background="green";
     } else {
         checkAnswer.innerHTML = "Incorrect!";
-
         document.getElementById(arr[userAns-1]).style.background="red";
         document.getElementById(arr[quizQuestions[currentQuestionIndex].correctAnswer - 1]).style.background="green";
     }
   });    
 
-document.getElementById('restart-quiz').addEventListener('click', function(){
-
+document.getElementById('restart-quiz').addEventListener('click', function(){           // Resets the page so they can start the quiz again
     location.reload();
     return false;
-
 });
 
+// ------------------------ Parameters and a call to start the quiz ------------------------------------------------------------------------------------
 
-
-// ------------------------ Main body of my code ------------------------------------------------------------------------------------
 let currentQuestionIndex = 0;                                                                   // Starting parameter
 let userAns = 0;                                                                                // Starting parameter
 let score = 0;                                                                                  // Starting parameter

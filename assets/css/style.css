@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* styling of the index page */
 
 body {
     background: url(../images/backgroundpic.jpg) no-repeat center center fixed;
@@ -36,7 +37,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 
 .question-area h2 {
     font-size: 18px;
@@ -138,6 +138,8 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+/* media queries*/
 
 @media screen and (max-width: 750px) {
     .game-area {
