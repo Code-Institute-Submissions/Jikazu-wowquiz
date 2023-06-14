@@ -86,7 +86,7 @@ The quiz has one area, which is the main area of the quiz where all the interact
 
 #### Main quiz
 
-   - The main quiz area contains the title, where the questions are displayed, the multiple choices, along with the buttons to check your answer, go to the next question, and resetting the quiz. 
+   - The main quiz area contains the title, where the questions are displayed, the multiple choices, along with the buttons to check your answer, go to the next question, and resetting the quiz. ![quizarea](/assets/readmeImages/quizarea.png)
 
    #### Footer Section
 
