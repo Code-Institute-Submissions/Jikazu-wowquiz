@@ -29,7 +29,7 @@ body {
 .game-area h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
-    color: #ffffff;
+    color: #333;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 20px;
@@ -46,8 +46,8 @@ body {
 }
 
 .btn {
-    background: #796f6a;
-    color: #000000;
+    background: #222;
+    color: #fff;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -62,13 +62,13 @@ body {
 }
 
 .btn:hover {
-    background: #222;
-    color: #fff;
+    background: #F1A61B;
+    color: #222;
 }
 
 .btn:focus {
-    background-color: #222;
-    color: #fff;
+    background-color: #F1A61B;
+    color: #222;
 }
 
 #next-btn {
