@@ -132,6 +132,13 @@ footer {
     color: #0a051d;
 }
 
+/*404*/
+
+#error {
+    color: #fff;
+    text-align: center;
+}
+
 @media screen and (max-width: 750px) {
     .game-area {
         padding: 60px;
