@@ -1,5 +1,7 @@
 # WOW QUIZ
 
+![responsive](assets/readme-images/responsive.png)
+
 # The purpose with this project
 
 The purpose of my project is to test the knowledge of World of Warcraft players on how much they know about the game.
