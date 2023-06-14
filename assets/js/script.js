@@ -16,8 +16,8 @@ const quizQuestions = [                                         // Set up my arr
         question: "Who is the leader of the horde?",
         answers: {
             choice1: "Sylvanas Windrunner",
-            choice2: "Your mom",
-            choice3: "Your dad",
+            choice2: "Tyrande Whisperwind",
+            choice3: "Onyxia",
             choice4: "Thrall"
         },
         correctAnswer: 4
