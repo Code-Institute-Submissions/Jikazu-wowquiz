@@ -72,7 +72,7 @@ The google fonts [Cabin](https://fonts.google.com/specimen/Barlow?query=barlow) 
 
 ### Images
 
-I've borrowed a screenshot of the login screen from [Spas Dimitrov at ArtStation](https://www.artstation.com/artwork/KrzPP9) and a parchment picture from [Wikipedia Commons](https://commons.wikimedia.org/wiki/File:Parchment.00.jpg)
+I've borrowed a screenshot of the login screen from [Spas Dimitrov at ArtStation](https://www.artstation.com/artwork/KrzPP9), parchment picture from [Wikipedia Commons](https://commons.wikimedia.org/wiki/File:Parchment.00.jpg) and favicon from [Logos Download](https://logos-download.com/456-world-of-warcraft-logo-download.html). 
 
 
 
