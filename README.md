@@ -64,7 +64,7 @@ As for the background and colours I decided to go with the classic login screen 
 
 
 ### Colour
-The colour palette is taken from the colours from the site's background. 
+The colour palette is taken from the colours that complements the site's background. ![colourpallete](/assets/readmeImages/colours.png)
 
 ### Typography
 
