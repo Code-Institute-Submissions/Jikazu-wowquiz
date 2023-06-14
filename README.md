@@ -31,7 +31,6 @@ A live version of the project can be found here - https://jikazu.github.io/wowqu
    + [Unfixed bugs](#unfixed-bugs "Unfixed bugs")
 + [Development and Deployment](#development-and-deployment "Development and Deployment")
 + [Content](#content "Content")
-+ [Media](#media "Media")
 + [Credits](#credits "Credits")
 + [Great Webpages](#great-webpages "Great webpages")
 
@@ -53,11 +52,13 @@ A live version of the project can be found here - https://jikazu.github.io/wowqu
 ### Requirements
 A responsive website that incorporates the languages I have learned so far, with a development process that needs to be well documented through a version controls system such as GitHub.
 
-Required technologies: HTML, CSS, Javascript
+Required technologies: HTML, CSS, Javascript.
 
 
 ## Design
-This is my second project, and I've been inspired by other student's P2 quizes that I've seen on Slack, but doing it my own way. My footer has been taken from my previous P1 project. As for the background and colours I decided to go with the classic login screen when you log in to the game, as that is the first thing one used to see when logging in to the classic version of the game back in the day, and a quiz background with parchment background as that is similar to the questlog window in the game.
+This is my second project, and I've been inspired by other student's P2 quizes that I've seen on Slack, but doing it my own way. My footer has been taken from my previous P1 project. Basic css and structure is inspired from [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&list=LL&index=1&t=663s) although a quite modified version.
+
+As for the background and colours I decided to go with the classic login screen when you log in to the game, as that is the first thing one used to see when logging in to the classic version of the game back in the day, and a quiz background with parchment background as that is similar to the questlog window in the game.
 
 ![questlog](/assets/readmeImages/quizbackground.jpg)
 
@@ -117,6 +118,8 @@ The quiz has one area, which is the main area of the quiz where all the interact
    - Solution: Added in the code to hide the scorebox h3 and change the text in the question area to what the final score is.
    3. Showing only the choices and not the placeholder text as well in the choice buttons.
    - Solution: Changed the way entirely I was displaying them to get the values from the array of questions. 
+   4. Clicking next button without having made a choice threw an error in the console.
+   - Added in the code that if useranswer is above 1 rather than 0, then the buttons changes back to it's original colour.  
 
    Other than the above, I had some general difficulties knowing where to begin, but after having talks with my mentor and peers I decided to completely revamp my code at one point. I also had some general spelling mistakes and open brackets that has been remedied. 
 
@@ -139,7 +142,10 @@ The quiz has one area, which is the main area of the quiz where all the interact
 
    
 ### Unfixed Bugs
-None.
+
+1. I've had reports from a beta tester with Safari on Mac that the choices did not change color as it should. I have not been able to replicate this by myself as I do not use Safari or a Mac.This seems to be working fine on an android phone, and on pc in Chrome, Firefox and Edge on different devices.
+
+2. When selecting a choice that is incorrect, and then changing it to correct choice, and clicking the Next button does not reset the first button changed back to it's original color and stays red.
 
 All known bugs are in the [Testing](#testing) section, with their solution. 
 
@@ -158,16 +164,13 @@ The procedure for deployment followed the "Creating your site" steps provided in
 5. At the ”Source” section choose ”main” as Branch and root as folder and click ”Save”
 6. The website will deploy and the pages refreshes to provide the live link to the project.
 
-The live link can be found here: https://jikazu.github.io/dunka-dungeons/
+The live link can be found here: https://jikazu.github.io/wowquiz/
    
 
 ## Content
 
 - All content on this site has been produced by the author of this project. 
 - The icons in the footer was taken from [Font Awesome](https://fontawesome.com/).
-
-## Media
-
 
 
 ## Credits
@@ -176,6 +179,11 @@ Many thanks to:
 
 Martina Terlevic
  - My mentor
+
+ Ka Heng Ho 
+ -  My boyfriend who was my rock when I struggled and calmed me down.
+
+ Slack.
 
  ### Great webpages
 
